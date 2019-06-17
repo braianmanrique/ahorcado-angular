@@ -3,7 +3,7 @@ const express = require('express'),
 
 const app = express();
 
-app.use(express.static('./dist/ahorcado-angular'));
+app.use(express.static('./ahorcado-angular'));
 
 
 app.get('/*',(req, res) =>{
