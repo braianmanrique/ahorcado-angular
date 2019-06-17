@@ -7,7 +7,7 @@ app.use(express.static('./dist/ahorcado-angular'));
 
 
 app.get('/*',(req, res) =>{
-	res.sendFile(path.join(__dirname, '/dist/ahorcado-angular/index.html'));
+	res.sendFile(path.join(__dirname, '/dist/ahorcado-angular/src/index.html'));
 });
 
 app.listen(process.env.PORT || 8080, () =>{
